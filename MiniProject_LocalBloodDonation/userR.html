@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Seeker Request Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Blood Seeker Request Form</h2>
+        <form id="bloodRequestForm">
+            <!-- Full Name -->
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+                <span class="error-message"></span>
+            </div>
+
+            <!-- Blood Type -->
+            <div class="form-group">
+                <label>Blood Type</label>
+                <select id="bloodType">
+                    <option value="">Select Blood Type</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+
+            <!-- Urgency Level -->
+            <div class="form-group">
+                <label>Urgency Level</label>
+                <select id="urgency">
+                    <option value="">Select Urgency</option>
+                    <option value="Immediate">Immediate</option>
+                    <option value="Within 24 hrs">Within 24 hrs</option>
+                    <option value="Not Urgent">Not Urgent</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+
+            <!-- Hospital Name -->
+            <div class="form-group">
+                <label>Hospital Name & Location</label>
+                <input type="text" id="hospital" placeholder="Enter hospital name">
+                <span class="error-message"></span>
+            </div>
+
+            <!-- City -->
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" id="city" placeholder="Enter your city">
+                <span class="error-message"></span>
+            </div>
+
+            <!-- PIN Code -->
+            <div class="form-group">
+                <label>PIN Code</label>
+                <input type="text" id="pinCode" placeholder="Enter 6-digit PIN code">
+                <span class="error-message"></span>
+            </div>
+
+            <!-- Contact Method -->
+            <div class="form-group">
+                <label>Preferred Contact Method</label>
+                <div class="radio-group">
+                    <input type="radio" id="contactPhone" name="contactMethod" value="Phone">
+                    <label for="contactPhone">Phone</label>
+                    <input type="radio" id="contactEmail" name="contactMethod" value="Email">
+                    <label for="contactEmail">Email</label>
+                </div>
+                <span class="error-message"></span>
+            </div>
+
+            <!-- Additional Notes -->
+            <div class="form-group">
+                <label>Additional Notes</label>
+                <textarea id="notes" placeholder="Enter any additional details (Optional)"></textarea>
+                <span class="error-message"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
